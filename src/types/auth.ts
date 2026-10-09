@@ -50,6 +50,8 @@ export type User = {
   address: string;
   orderHistory?: OrderHistoryItem[];
   savedAddresses?: SavedAddress[];
+  isAffiliate?: boolean;
+  hasUsedAffiliateDiscount?: boolean;
 };
 
 export type RegisterData = {
@@ -58,6 +60,7 @@ export type RegisterData = {
   phone: string;
   address: string;
   password: string;
+  isAffiliate?: boolean;
 };
 
 export type AuthContextType = {
